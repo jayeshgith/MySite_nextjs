@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Navigation() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-blue-50 via-white to-slate-100 backdrop-blur-xl border-b border-slate-200 shadow-sm">
-      {/* Desktop */}
+     
       <div className="hidden md:flex relative h-20 max-w-6xl mx-auto items-center px-8">
         <h1 className="absolute left-1/2 -translate-x-1/2 text-3xl font-extrabold tracking-tight bg-gradient-to-r from-blue-600 via-slate-900 to-orange-500 bg-clip-text text-transparent">
           WELCOME TO MYPAGE
@@ -17,7 +17,7 @@ export default function Navigation() {
         </div>
       </div>
 
-      {/* Mobile */}
+      
       <div className="md:hidden flex flex-col items-center gap-3 py-4 px-4">
         <h1 className="text-xl font-extrabold tracking-tight bg-gradient-to-r from-blue-600 via-slate-900 to-orange-500 bg-clip-text text-transparent text-center">
           WELCOME TO MYPAGE
@@ -36,7 +36,7 @@ export default function Navigation() {
   );
 }
 
-/* Reusable Button */
+
 function NavButton({ href, children, mobile }) {
   return (
     <Link
